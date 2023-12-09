@@ -1,0 +1,279 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+    margin: 0 1em;
+}
+
+.contenido {
+    flex: 1;
+    margin-bottom: 60px; /* Ajusta según la altura de tu footer */
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+body.show-footer .footer {
+    display: block;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+.product img {
+    width: 100px;
+    max-width: 100px;
+    height: auto;
+    display: block;
+}
+
+.product-info {
+    padding: 1em;
+}
+
+.product-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.product-price {
+    color: #009688;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.map {
+    margin-bottom: 80px;
+    filter: grayscale(100%) invert(92%) contrast(93%);
+}
+
+.nosotros {
+    text-align: center;
+    padding: 20px;
+}
+
+.nosotros h1 {
+    color: #3498db; /* Cambia el color del título a azul */
+}
+
+.nosotros p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333; /* Cambia el color del texto a negro */
+    margin-top: 10px;
+}
+/* Carusel produ */
+.carruselProductos {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    text-align: center;
+}
+
+h3, p {
+    margin: 10px 0;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background: rgba(0, 0, 0, 0.8);
+    border: none;
+    outline: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contenido {
+    margin-bottom: 60px; /* Ajusta según la altura de tu footer */
+}
+/* Footer */
+.pie {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    display: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body:after {
+    content: '';
+    flex: 1;
+}
+
+
+/*mision*/
+.mision {
+
+
+    text-align: center;
+    padding: 40px;
+    background-color: #1c1c1c; /* Fondo oscuro solo para la sección */
+
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* Sutil sombra para resaltar */
+}
+
+h2 {
+    color: #3498db; /* Color azul para el título */
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+    color: #fff; /* Color de texto blanco para el contenido de la sección */
+}
+/* Compromiso */
+.compromiso {
+    background-image: url('https://images.wallpaperscraft.com/image/single/road_trees_dark_882991_1024x600.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Cambia el color del texto según sea necesario */
+    text-align: center;
+    padding: 50px; /* Ajusta según sea necesario */
+}
+
+.contenido-compromiso {
+    position: relative;
+    z-index: 1; /* Para que el contenido esté sobre la imagen de fondo */
+}
+
+.compromiso h2 {
+    margin-bottom: 10px;
+}
+
+/* atencion al cliente */
+
+.atencion-al-cliente {
+
+    padding: 40px;
+    background-color: #1c1c1c; /* Fondo rosa extravagante para la sección */
+
+
+    text-align: center;
+}
+
+h2 {
+    color: #fff; /* Color blanco para el título */
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Fondo azul para la sección Visítanos */
+.visitanos {
+    background-color: #1c1c1c; /* Fondo azul para la sección Visítanos */
+    color: #fff; /* Color de texto blanco para la sección */
+    text-align: center;
+    padding: 60px 0;
+}
+
+.contenido-visitanos {
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #fff; /* Color blanco para el título */
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+
+
+
+
+

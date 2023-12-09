@@ -5,13 +5,14 @@ self.addEventListener('install', function(event) {
       caches.open('my-cache').then(function(cache) {
         return cache.addAll([
           '/',
-          './home.html',
+          './index.html',
           './Productos.html',
           './Contacto.css',
           './carrusel.css',
           './contacto.css',
-          './home.css',
+          './index.css',
             './productos.css',
+            './footer.css',
             './imagenes'
 
             

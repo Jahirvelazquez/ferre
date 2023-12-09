@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería las 3 JJJ - Tu tienda de herramientas</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="carrusel.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>Ferretería las 3 JJJ</h1>
+        <p>Tu tienda de herramientas</p>
+    </header>
+
+    <nav>
+        <a href="./index.css">Inicio</a>
+        <a href="./Productos.html">Productos</a>
+        <a href="./Contacto.html">Contacto</a>
+    </nav>
+
+    <section class="carrusel">
+        <!-- Imagen de fondo del carrusel -->
+        <div class="carrusel-background">
+            <img src="https://images.wallpaperscraft.com/image/single/road_sunset_horizon_118582_2048x1152.jpg" alt="Imagen de fondo del carrusel">
+        </div>
+
+        <div class="box">
+            <span style="--i:1;"><img src="https://images.pexels.com/photos/4792511/pexels-photo-4792511.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></span>
+            <span style="--i:2;"><img src="https://images.pexels.com/photos/834892/pexels-photo-834892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></span>
+            <span style="--i:3;"><img src="https://images.pexels.com/photos/5505920/pexels-photo-5505920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></span>
+            <span style="--i:4;"><img src="https://images.pexels.com/photos/5974038/pexels-photo-5974038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></span>
+            <span style="--i:5;"><img src="https://images.pexels.com/photos/11500419/pexels-photo-11500419.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></span>
+            <span style="--i:6;"><img src="https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></span>
+            <span style="--i:7;"><img src="https://images.pexels.com/photos/416988/pexels-photo-416988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></span>
+            <span style="--i:8;"><img src="https://images.pexels.com/photos/1420744/pexels-photo-1420744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></span>
+        </div>
+
+        <script type="text/javaScript">
+            let box = document.querySelector('.box');
+            window.onmousemove = function (e) {
+                let x = e.clientX/3;
+                box.style.transform = "perspective(1000px) rotateY(" + x + "deg)";
+            }
+        </script>
+    </section>
+
+    <section class="nosotros">
+        <H1>NOSOTROS</H1>
+        <p>¡Bienvenido a Ferretería las 3 JJJ!
+
+            En Ferretería las 3 JJJ, nos enorgullece ofrecer a nuestros clientes una amplia variedad de herramientas y productos de alta calidad para satisfacer todas sus necesidades de construcción y reparación. Con una trayectoria sólida y un compromiso inquebrantable con la excelencia, nos esforzamos por ser tu destino preferido para todas tus herramientas y suministros.</p>
+    </section>
+    <section class="mision">
+        <h2>Nuestra Misión</h2>
+        <p>Nuestra misión es proporcionar a nuestros clientes productos duraderos y confiables que les ayuden a completar sus proyectos con éxito. Desde herramientas manuales hasta maquinaria especializada, trabajamos arduamente para mantener un inventario diverso y bien surtido.</p>
+    </section>
+    <section class="compromiso">
+        <div class="contenido-compromiso">
+            <h2>Compromiso con la Calidad</h2>
+            <p>En Ferretería las 3 JJJ, la calidad es nuestra prioridad número uno. Trabajamos únicamente con proveedores de confianza y marcas reconocidas para garantizar que cada producto que ofrecemos cumpla con los más altos estándares de calidad. Nos esforzamos por ser tu fuente confiable para herramientas que te durarán a lo largo del tiempo.</p>
+        </div>
+    </section>
+    <section class="atencion-al-cliente">
+        <h2>Atención al Cliente</h2>
+        <p>Valoramos a cada cliente y nos esforzamos por brindar un servicio excepcional. Nuestro equipo está aquí para asistirte, responder tus preguntas y ofrecer asesoramiento experto. En Ferretería las 3 JJJ, no solo vendemos herramientas, sino que construimos relaciones duraderas con nuestros clientes.</p>
+    </section>
+    
+
+    <section class="carruselProductos">
+        <div class="slides-container">
+            <div class="slide">
+                <img src="https://images.pexels.com/photos/5974047/pexels-photo-5974047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Producto 1">
+                <div class="caption">
+                    <h3>Herramientas pesadas</h3>
+                    <p class="car">De alta calidad.</p>
+                </div>
+            </div>
+    
+            <div class="slide">
+                <img src="https://images.pexels.com/photos/1094767/pexels-photo-1094767.jpeg" alt="Producto 2">
+                <div class="caption">
+                    <h3>Herramientas pesadas</h3>
+                    <p class="car">De alta calidad.</p>
+                </div>
+            </div>
+    
+            <div class="slide">
+                <img src="https://images.pexels.com/photos/3846086/pexels-photo-3846086.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Producto 3">
+                <div class="caption">
+                    <h3>Herramientas persadas</h3>
+                    <p class="car"> De alta calidad.</p>
+                </div>
+            </div>
+        </div>
+        <script src="carrusel.js"></script>
+
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </section>
+
+    <section class="visitanos">
+        <div class="contenido-visitanos">
+            <h2>¡Visítanos!</h2>
+            <p>Te invitamos a visitar nuestra tienda y explorar nuestro amplio catálogo de productos. Ya sea que seas un profesional de la construcción o un entusiasta del bricolaje, encontrarás todo lo que necesitas en Ferretería las 3 JJJ.</p>
+            <p>Gracias por elegirnos. Estamos aquí para ayudarte a hacer realidad tus proyectos.</p>
+            <p>¡Ferretería las 3 JJJ, donde la calidad y el servicio se encuentran!</p>
+        </div>
+    </section>
+    
+
+    <section>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28323.396601332883!2d-109.93324697898304!3d27.45603841020019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86c81641ae5b3a39%3A0x6aeaacc00f952800!2sGuanajuato%201610%2C%20Primavera%2C%2085098%20Cdad.%20Obreg%C3%B3n%2C%20Son.!5e0!3m2!1ses-419!2smx!4v1701909819897!5m2!1ses-419!2smx" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer class="pie">
+        <p>&copy; 2023 Ferretería las 3 JJJ. Todos los derechos reservados.</p>
+    </footer>
+    <script src="footer.js"></script>
+</section>
+    <script>
+        fetch('http://localhost:3000/herramientas_ferreteria')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Hubo un problema al obtener los datos.');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Herramientas de ferreteria:', data);
+                displayDataInTable(data);
+            })
+            .catch(error => {
+                console.error('Error en la solicitud:', error);
+            });
+
+        function displayDataInTable(data) {
+            // Obtener la referencia a la tabla
+            const table = document.getElementById('herramientasTable');
+            const tbody = table.querySelector('tbody');
+
+            // Limpiar cualquier contenido existente en la tabla
+            tbody.innerHTML = '';
+
+            // Iterar sobre los datos y agregar filas a la tabla
+            data.forEach(herramientas => {
+                const row = tbody.insertRow();
+                const idCell = row.insertCell(0);
+                const nombreCell = row.insertCell(1);
+
+                // Ajusta las celdas según la estructura de tu objeto de datos
+                idCell.textContent = herramientas.id;
+                nombreCell.textContent = herramientas.nombre;
+                // Agrega más celdas según la estructura de tu objeto de datos
+            });
+        }
+    </script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(function(registration) {
+                    console.log('Service Worker registrado con éxito:', registration);
+                })
+                .catch(function(error) {
+                    console.log('Error al registrar el Service Worker:', error);
+                });
+        }
+    </script>
+</body>
+</html>
