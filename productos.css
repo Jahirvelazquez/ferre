@@ -1,0 +1,86 @@
+/* Tu estilo CSS anterior permanece aquí */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+    margin: 0 1em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #3498db; /* Cambia el color al azul al pasar el mouse sobre los enlaces */
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin-top: 1em;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto {
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+}
+
+.producto-info {
+    text-align: center;
+}
+
+.precio {
+    color: #009688;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.descripcion {
+    margin-top: 10px;
+}
+
+/* Ajustes adicionales según sea necesario */

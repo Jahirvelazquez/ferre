@@ -1,0 +1,82 @@
+{
+  "herramientas_ferreteria": [
+    {
+      "nombre": "Destornillador Phillips",
+      "precio": 10.99,
+      "descripcion": "Destornillador Phillips de alta calidad para diversos usos.",
+      "imagen": "https://images.pexels.com/photos/1094767/pexels-photo-1094767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "nombre": "Martillo de Garra",
+      "precio": 15.99,
+      "descripcion": "Martillo de garra resistente y duradero para tus proyectos de construcción.",
+      "imagen": "./imagenes/Martillo de garra resistente y duradero para tus proyectos de construcción_9.jpeg"   
+     },
+    {
+      "nombre": "Sierra Circular",
+      "precio": 89.99,
+      "descripcion": "Sierra circular potente para cortes precisos en madera y otros materiales.",
+      "imagen": "./imagenes/Sierra circular potente para cortes precisos en madera y otros materiales_12_11zon.jpeg"   
+     },
+    {
+      "nombre": "Taladro Eléctrico",
+      "precio": 79.99,
+      "descripcion": "Taladro eléctrico inalámbrico para perforaciones rápidas y precisas.",
+      "imagen": "./imagenes/Taladro Eléctrico_13.jpeg"   
+      },
+    {
+      "nombre": "Llave Ajustable",
+      "precio": 12.99,
+      "descripcion": "Llave ajustable para apretar y aflojar tuercas y pernos de diferentes tamaños.",
+      "imagen": "./imagenes/Llave Ajustable.jpg"     
+    },
+    {
+      "nombre": "Cinta Métrica",
+      "precio": 7.99,
+      "descripcion": "Cinta métrica retráctil para mediciones precisas en proyectos de construcción.",
+      "imagen": "./imagenes/Cinta Métrica_2.jpeg"   
+      },
+    {
+      "nombre": "Nivel de Burbuja",
+      "precio": 5.99,
+      "descripcion": "Nivel de burbuja para asegurar que tus trabajos estén perfectamente nivelados.",
+      "imagen": "./imagenes/Nivel de Burbuja_10_11zon.jpeg"    
+     },
+    {
+      "nombre": "Llave de Impacto",
+      "precio": 69.99,
+      "descripcion": "Llave de impacto para apretar o aflojar tuercas de manera rápida y eficiente.",
+      "imagen": "./imagenes/Llave de Impacto_8_11zon.jpeg"    
+     },
+    {
+      "nombre": "Pistola de Silicona",
+      "precio": 14.99,
+      "descripcion": "Pistola de silicona para aplicar adhesivos de manera precisa en tus proyectos.",
+      "imagen": "./imagenes/Pistola de Silicona_11_11zon.jpeg"     
+    },
+    {
+      "nombre": "Escalera Plegable",
+      "precio": 49.99,
+      "descripcion": "Escalera plegable y portátil para alcanzar lugares elevados con facilidad.",
+      "imagen": "./imagenes/esca.webp"    
+     },
+    {
+      "nombre": "Destornillador Plano",
+      "precio": 9.99,
+      "descripcion": "Destornillador plano de calidad para diversos usos.",
+      "imagen": "./imagenes/Destornillador Plano_4_11zon.jpeg"   
+      },
+    {
+      "nombre": "Alicates de Corte",
+      "precio": 11.99,
+      "descripcion": "Alicates de corte resistentes para trabajos precisos.",
+      "imagen": "./imagenes/Alicates de Corte_1_11zon.jpeg"     
+    },
+    {
+      "nombre": "Lijadora Orbital",
+      "precio": 39.99,
+      "descripcion": "Lijadora orbital para preparar superficies antes de pintar o barnizar.",
+      "imagen": "./imagenes/Lijadora Orbital_6_11zon.jpeg"     
+    }
+  ]
+}

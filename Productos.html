@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería XYZ - Productos</title>
+    <link rel="stylesheet" href="productos.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+
+    <header>
+        <h1>Ferretería las 3 JJJ</h1>
+        <p>Tu tienda de herramientas</p>
+    </header>
+
+    <nav>
+        <a href="./Home.html">Inicio</a>
+        <a href="./Productos.html">Productos</a>
+        <a href="./Contacto.html">Contacto</a>
+    </nav>
+
+    <section id="productos">
+        <!-- Aquí se cargarán dinámicamente los productos desde el JSON -->
+    </section>
+
+    <footer class="pie">
+        <p class="foo">&copy; 2023 Ferretería las 3 JJJ. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="footer.js"></script>
+
+    <!-- Script para cargar datos desde el JSON -->
+    <script>
+        // Función para obtener datos desde el servidor
+        function fetchData() {
+            return fetch('https://alurageek-api-nine.vercel.app/herramientas_ferreteria')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Hubo un problema al obtener los datos.');
+                    }
+                    return response.json();
+                })
+                .catch(error => {
+                    console.error('Error en la solicitud:', error);
+                });
+        }
+
+        // Función para mostrar datos en la sección de productos
+        function displayDataInProductsSection(data) {
+            const productosSection = document.getElementById('productos');
+
+            data.forEach(herramienta => {
+                const productoDiv = document.createElement('div');
+                productoDiv.className = 'producto';
+
+                productoDiv.innerHTML = `
+                    <img src="${herramienta.imagen}" alt="${herramienta.nombre}">
+                    <div class="producto-info">
+                        <h2>${herramienta.nombre}</h2>
+                        <p class="precio">$${herramienta.precio.toFixed(2)}</p>
+                        <p class="descripcion">${herramienta.descripcion}</p>
+                    </div>
+                `;
+
+                productosSection.appendChild(productoDiv);
+            });
+        }
+
+        // Obtener datos y mostrarlos en la página
+        fetchData()
+            .then(function(data) {
+                console.log('Herramientas de ferretería:', data);
+                displayDataInProductsSection(data);
+                // Almacenar los datos en localStorage si es necesario
+                localStorage.setItem('Productos', JSON.stringify(data));
+            })
+            .catch(function(error) {
+                console.error('Error:', error);
+            });
+    </script>
+
+    <!-- Registro del Service Worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(function(registration) {
+                    console.log('Service Worker registrado con éxito:', registration);
+                })
+                .catch(function(error) {
+                    console.log('Error al registrar el Service Worker:', error);
+                });
+        }
+    </script>
+</body>
+</html>
